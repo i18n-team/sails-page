@@ -17,9 +17,10 @@ module.exports = {
   	console.log('lang:' + req.param('lang'));
 
   	var lang = req.param('lang') || 'en';
-    req.setLocale(lang);
+    
+    	req.setLocale(lang);
 
-    res.view();
+    	res.view();
     
   }
 };
