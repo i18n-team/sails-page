@@ -1,4 +1,3 @@
-sails-page
-==========
+# page
 
-page for sails
+page [Sails](http://sailsjs.org) application

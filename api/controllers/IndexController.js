@@ -1,0 +1,26 @@
+/**
+ * IndexController
+ *
+ * @description :: Server-side logic for managing indices
+ * @help        :: See http://links.sailsjs.org/docs/controllers
+ */
+
+module.exports = {
+	
+
+
+  /**
+   * `IndexController.index()`
+   */
+  index: function (req, res) {
+
+  	console.log('lang:' + req.param('lang'));
+
+  	var lang = req.param('lang') || 'en';
+    req.setLocale(lang);
+
+    res.view();
+    
+  }
+};
+
